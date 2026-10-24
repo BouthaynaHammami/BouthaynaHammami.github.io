@@ -281,6 +281,9 @@
   .proj-gallery a{ position:absolute; inset:0; display:block; overflow:hidden; border-radius:10px; border:1px solid var(--line); background:var(--bg-soft); opacity:0; pointer-events:none; transform:translateX(18px) scale(.985); transition:opacity .75s ease, transform .75s cubic-bezier(.2,.8,.25,1); }
   .proj-gallery a.active{ opacity:1; pointer-events:auto; transform:translateX(0) scale(1); }
   .proj-gallery img{ width:100%; height:100%; object-fit:cover; transition:transform .6s ease, filter .4s ease; }
+  .proj-gallery--mobile{ height:280px; aspect-ratio:auto; background:#fff; }
+  .proj-gallery--mobile img{ object-fit:contain; }
+  .proj-gallery--mobile a:hover img{ transform:none; filter:none; }
   .proj-gallery a:hover img{ transform:scale(1.06); filter:saturate(1.08); }
   .proj-gallery::after{ position:absolute; right:9px; bottom:9px; padding:4px 8px; border-radius:999px; background:rgba(45,31,47,.7); color:#fff; font-size:10px; letter-spacing:.3px; pointer-events:none; }
   .proj-tags{ display:flex; flex-wrap:wrap; gap:7px; }
@@ -523,7 +526,7 @@
     <div class="sec-head reveal up">
       <span class="sec-tag">Academic work</span>
       <h2>Featured projects</h2>
-      <p>Microservices systems, hotel platforms, and BI dashboards built during my engineering studies.</p>
+      <p>AI-powered data analysis, mobile booking, microservices systems, and BI dashboards built during my engineering studies.</p>
     </div>
 
     <div class="proj-grid">
@@ -574,6 +577,38 @@
         </div>
         <div class="proj-tags"><span>Power BI</span><span>ETL</span><span>Data warehouse</span><span>25+ DAX measures</span><span>Machine Learning</span></div>
       </div>
+
+      <div class="proj-card reveal up">
+        <div class="proj-icon">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19V5"/><path d="M4 19h17"/><path d="m7 15 4-4 3 2 6-7"/><path d="M16 6h4v4"/></svg>
+        </div>
+        <h3>AI Data Analyst</h3>
+        <p>AI assistant that lets users explore CSV, Excel, PDF, Word, and image files with OCR using natural language. It generates tables and charts in a controlled environment, protects personal data, and includes conversations, exports, and share links. Validated AI execution and 100+ backend tests make the experience safer and more reliable.</p>
+        <div class="proj-gallery" aria-label="AI Data Analyst screenshots">
+          <a href="IA%20Data%201.png" class="gallery-image"><img src="IA%20Data%201.png" alt="AI Data Analyst interface 1"></a>
+          <a href="IA%20Data%202.png" class="gallery-image"><img src="IA%20Data%202.png" alt="AI Data Analyst interface 2"></a>
+          <a href="IA%20Data%203.png" class="gallery-image"><img src="IA%20Data%203.png" alt="AI Data Analyst interface 3"></a>
+          <a href="IA%20Data%204.png" class="gallery-image"><img src="IA%20Data%204.png" alt="AI Data Analyst interface 4"></a>
+          <a href="IA%20Data%205.png" class="gallery-image"><img src="IA%20Data%205.png" alt="AI Data Analyst interface 5"></a>
+        </div>
+        <div class="proj-tags"><span>FastAPI</span><span>React</span><span>TypeScript</span><span>Groq LLM</span><span>PostgreSQL</span><span>Pytest</span><span>Playwright</span></div>
+      </div>
+
+      <div class="proj-card reveal up">
+        <div class="proj-icon">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="6" y="2.5" width="12" height="19" rx="2"/><path d="M10 5h4"/><path d="M10 18.5h4"/><path d="m9 11 2 2 4-4"/></svg>
+        </div>
+        <h3>LouageGo</h3>
+        <p>Mobile app for booking shared taxis in Tunisia: passengers find routes, choose seats, and receive QR tickets, while drivers manage trips and scan tickets. Includes maps, favorites, reviews, notifications, and PDF tickets. Built with feature-based layers, the app checks seat availability when booking and supports French, English, and Arabic.</p>
+        <div class="proj-gallery proj-gallery--mobile" aria-label="LouageGo mobile app screenshots">
+          <a href="Mobile%201.png" class="gallery-image"><img src="Mobile%201.png" alt="LouageGo mobile app screen 1"></a>
+          <a href="Mobile%202.png" class="gallery-image"><img src="Mobile%202.png" alt="LouageGo mobile app screen 2"></a>
+          <a href="Mobile%203.png" class="gallery-image"><img src="Mobile%203.png" alt="LouageGo mobile app screen 3"></a>
+          <a href="Mobile%204.png" class="gallery-image"><img src="Mobile%204.png" alt="LouageGo mobile app screen 4"></a>
+          <a href="Mobile%205.png" class="gallery-image"><img src="Mobile%205.png" alt="LouageGo mobile app screen 5"></a>
+        </div>
+        <div class="proj-tags"><span>Flutter</span><span>Dart</span><span>Riverpod</span><span>Hive</span><span>Firebase</span><span>GoRouter</span><span>QR tickets</span></div>
+      </div>
     </div>
   </div>
 </section>
@@ -605,7 +640,7 @@
       <div class="lang-badges reveal right">
         <div class="lang-badge"><div class="lb-top"><span>Arabic</span><small>Native</small></div><div class="lb-dots"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></div></div>
         <div class="lang-badge"><div class="lb-top"><span>French</span><small>Fluent</small></div><div class="lb-dots"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></div></div>
-        <div class="lang-badge"><div class="lb-top"><span>English</span><small>Advanced</small></div><div class="lb-dots"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></div></div>
+        <div class="lang-badge"><div class="lb-top"><span>English</span><small>Fluent</small></div><div class="lb-dots"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></div></div>
         <div class="lang-badge"><div class="lb-top"><span>German</span><small>Basic</small></div><div class="lb-dots"><i class="on"></i><i></i><i></i><i></i><i></i></div></div>
       </div>
     </div>
@@ -801,10 +836,12 @@ const translations = {
   "Integrated data and automated feeds into Elasticsearch — covering performance, security, and scalability — while upskilling in Angular, Spring Boot, and Kibana within a SCRUM environment.": "Intégration des données et des flux automatisés dans Elasticsearch, en couvrant la performance, la sécurité et la scalabilité, tout en développant mes compétences en Angular, Spring Boot et Kibana dans un environnement SCRUM.",
   "Academic work": "Travaux académiques",
   "Featured projects": "Projets sélectionnés",
-  "Microservices systems, hotel platforms, and BI dashboards built during my engineering studies.": "Systèmes en microservices, plateformes hôtelières et tableaux de bord BI réalisés pendant mes études d'ingénierie.",
+  "AI-powered data analysis, mobile booking, microservices systems, and BI dashboards built during my engineering studies.": "Analyse de données par IA, réservation mobile, systèmes en microservices et tableaux de bord BI réalisés pendant mes études d'ingénierie.",
   "Modular academic & social management platform on a microservices architecture: Spring Boot backend, Angular frontend, Keycloak SSO. CI/CD via Jenkins, Docker & Kubernetes orchestration, plus ML modules for staffing optimization, dropout-risk prediction, and personalized study plans.": "Plateforme modulaire de gestion académique et sociale basée sur une architecture microservices : backend Spring Boot, frontend Angular et SSO Keycloak. CI/CD avec Jenkins, orchestration Docker et Kubernetes, ainsi que des modules ML pour l'optimisation des équipes, la prédiction du risque d'abandon et des parcours d'étude personnalisés.",
   "Hotel booking platform with 9 independent microservices (customers, rooms, bookings, staff, maintenance, reviews, users), a centralized API Gateway, Eureka service discovery, and Config Server. Async messaging via RabbitMQ, MySQL persistence, Keycloak OAuth2/JWT auth, and an Angular 18 frontend with Server-Side Rendering.": "Plateforme de réservation hôtelière composée de 9 microservices indépendants (clients, chambres, réservations, personnel, maintenance, avis et utilisateurs), d'une API Gateway centralisée, d'Eureka et d'un Config Server. Messagerie asynchrone avec RabbitMQ, persistance MySQL, authentification Keycloak OAuth2/JWT et frontend Angular 18 avec rendu côté serveur.",
   "Designed an ETL pipeline and a multi-table data warehouse covering patients, visits, doctors, diagnoses, insurance, and cities. Built a 6-page Power BI dashboard with 25+ DAX measures, dynamic date and region filters, and an integrated predicted-versus-actual revenue forecasting model.": "Conception d'un pipeline ETL et d'un entrepôt de données couvrant les patients, visites, médecins, diagnostics, assurances et villes. Création d'un tableau de bord Power BI de 6 pages avec plus de 25 mesures DAX, des filtres dynamiques par date et région et un modèle intégré de prévision des revenus.",
+  "AI assistant that lets users explore CSV, Excel, PDF, Word, and image files with OCR using natural language. It generates tables and charts in a controlled environment, protects personal data, and includes conversations, exports, and share links. Validated AI execution and 100+ backend tests make the experience safer and more reliable.": "Assistant IA permettant d'explorer des fichiers CSV, Excel, PDF, Word et des images avec OCR en langage naturel. Il génère des tableaux et graphiques dans un environnement contrôlé, protège les données personnelles et propose des conversations, des exports et des liens de partage. L'exécution encadrée de l'IA et plus de 100 tests backend renforcent la fiabilité.",
+  "Mobile app for booking shared taxis in Tunisia: passengers find routes, choose seats, and receive QR tickets, while drivers manage trips and scan tickets. Includes maps, favorites, reviews, notifications, and PDF tickets. Built with feature-based layers, the app checks seat availability when booking and supports French, English, and Arabic.": "Application mobile de réservation de louages en Tunisie : les passagers recherchent des trajets, choisissent leurs places et reçoivent des tickets QR, tandis que les chauffeurs gèrent leurs trajets et scannent les tickets. Elle propose cartes, favoris, avis, notifications et tickets PDF. Son architecture par fonctionnalités vérifie la disponibilité des places à la réservation et prend en charge le français, l'anglais et l'arabe.",
   "Background": "Formation",
   "Education & languages": "Formation et langues",
   "Engineering Degree — Software Architecture": "Diplôme d'ingénieur — Architecture logicielle",
